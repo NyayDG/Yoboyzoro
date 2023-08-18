@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/*------------------------------------- MAINPAGE -----------------------------------*/
+/* ID SELECTORS */
+#mainPage {
+    background-color: #E5FFE1;
+    margin-top: -20px;
+    padding: 40px;
+}
+
+#logoImg {
+    width: 35px;
+    height: 35px;
+}
+
+#navbarTitle {
+    color: #00BF63;
+    font-family: 'Belleza', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mainPageNavbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+#navbarLinks >* a{
+    text-decoration: none;
+    color: black;
+}
+
+#mainPageTextImage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#mainPageText {
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 70px;
+}
+
+#flagImage {
+    padding-top: 30px;
+}
+
+#mainPageImage {
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right side */
+}
+
+#zoroWelcomingImage{
+    margin-top: -10px;
+    width: 60%;
+}
+
+/*---------------------------------------------------- MEDIA QUERY -------------------------------------------------*/
+@media (max-width: 1024px) {
+    #zoroWelcomingImage{
+        margin-top: -10px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 868px) {
+    #zoroWelcomingImage{
+        margin-top: -10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #zoroWelcomingImage{
+        margin-top: -10px;
+        width: 125%;
+        height: 75%;
+    }
+}
+
+@media (max-width: 685px) {
+    #navbarLinks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    #mainPageTextImage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #flagImage {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    #zoroWelcomingImage{
+        margin-top: -300px;
+        width: 100%;
+        height: 70%;
+    }
+}
